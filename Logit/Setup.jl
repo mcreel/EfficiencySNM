@@ -1,7 +1,3 @@
-using Flux, BSON, Statistics, CUDA
-include("Logit_DGP.jl")
-include("../Net.jl")
-
 # function to create the net
 function make_net(dev)
     tcn = build_tcn(100, 4, 3,

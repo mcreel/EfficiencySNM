@@ -1,5 +1,8 @@
-# defines the net and the DSGE model,  and needed functions
-include("Setup.jl")
+using Flux, BSON, Statistics, CUDA
+include("Logit_DGP.jl") # the dgp and prior
+include("../Net.jl") # function to create and train net
+include("Setup.jl")  # defines the net and needed functions
+
 
 function main()
     train_net() # comment out if already trained
