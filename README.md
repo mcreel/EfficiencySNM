@@ -1,1 +1,1 @@
-Using DeepSimulatedMoments package to estimate a simple DSGE model
+Explore the efficiency of neural moment-based estimators
